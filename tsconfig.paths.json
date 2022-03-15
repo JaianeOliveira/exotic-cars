@@ -9,7 +9,8 @@
       "@shared/*": ["./shared/*"],
       "@types/*": ["./types/*"],
       "@redux/*": ["./redux/*"],
-      "@routes/*": ["./routes/*"]
+      "@routes/*": ["./routes/*"],
+      "@constants/*": ["./shared/constants/*"]
     }
   }
 }
