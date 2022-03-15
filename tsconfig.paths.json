@@ -5,9 +5,8 @@
       "@/*": ["./*"],
       "@components": ["./components"],
       "@pages": ["./pages"],
-      "@services/*": ["./services/*"],
+      "@services": ["./services"],
       "@shared/*": ["./shared/*"],
-      "@types/*": ["./types/*"],
       "@redux/*": ["./redux/*"],
       "@routes/*": ["./routes/*"],
       "@constants/*": ["./shared/constants/*"]
