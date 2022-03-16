@@ -15,9 +15,15 @@ import car from "@shared/types/car";
 import { BsThreeDots } from "react-icons/bs";
 import Colors from "@constants/colors";
 
+import { useNavigate } from "react-router-dom";
+
 const Card = (props: car) => {
+  const navigate = useNavigate();
   return (
-    <CardContainer>
+    <CardContainer
+      key={props.id}
+      onClick={() => navigate(`/details/${props.id}`)}
+    >
       <Background image={props.image}>
         <TopRow>
           <BrandAndModel>

@@ -27,12 +27,10 @@ const Home = () => {
   const carsData: car[] = useSelector((state: any) => state.cars);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  // const [carsData, setCarsData] = useState<car[] | []>([]);
 
   useLayoutEffect(() => {
     setIsLoading(true);
     getCarsData().then((response) => {
-      // setCarsData([...response]);
       dispatch(setData(response));
       setIsLoading(false);
     });
