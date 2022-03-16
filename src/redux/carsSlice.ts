@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 type car = {
   id: number;
@@ -9,14 +9,17 @@ type car = {
   details: { id: number; color: string; image: string }[];
 };
 
-const initialState: car[] | any[] = [];
+type Reducers = {
+  setData: (state: car[], action: PayloadAction<car[]>) => void;
+};
 
-export const carsSlice = createSlice({
+export const carsSlice = createSlice<car[], Reducers>({
   name: "cars",
-  initialState,
+  initialState: [],
   reducers: {
     setData: (state, action) => {
-      state = action.payload;
+      state.splice(0, state.length);
+      state.push(...action.payload);
     },
   },
 });

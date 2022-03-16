@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 
-import { CenteredDiv } from "./styles";
+import { CenteredDiv, Screen } from "./styles";
 
 import { useNavigate } from "react-router-dom";
 
-import { Header } from "@components";
+import { Header, Card } from "@components";
 
 import CircularProgress from "@mui/material/CircularProgress";
 
@@ -14,23 +14,40 @@ import { useDispatch, useSelector } from "react-redux";
 
 import Colors from "@/shared/constants/colors";
 
+type car = {
+  id: number;
+  brand: string;
+  model: string;
+  price: number;
+  image: string;
+  details: { id: number; color: string; image: string }[];
+};
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const carsData: car[] = useSelector((state: any) => state.cars);
+  const dispatch = useDispatch();
   const navigate = useNavigate();
+  // const [carsData, setCarsData] = useState<car[] | []>([]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setIsLoading(true);
     getCarsData().then((response) => {
+      // setCarsData([...response]);
+      dispatch(setData(response));
       setIsLoading(false);
-      console.log(response);
     });
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
       <Header />
       {!isLoading ? (
-        <CenteredDiv>Hi</CenteredDiv>
+        <Screen>
+          {carsData.map((item) => {
+            console.log(item);
+            return <Card {...item}></Card>;
+          })}
+        </Screen>
       ) : (
         <CenteredDiv>
           <CircularProgress color="primary" />
