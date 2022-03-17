@@ -11,6 +11,8 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 5vw;
+  background-color: #fff;
+  position: fixed;
 `;
 
 export const TitleContainer = styled.div`

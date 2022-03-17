@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useState } from "react";
 
-import { CenteredDiv, Screen } from "./styles";
+import { CenteredDiv, Screen, TryAgainButton } from "./styles";
 
 import { useNavigate } from "react-router-dom";
 
@@ -24,16 +24,23 @@ type car = {
 };
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [tryAgain, setTryAgain] = useState(false);
   const carsData: car[] = useSelector((state: any) => state.cars);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   useLayoutEffect(() => {
     setIsLoading(true);
-    getCarsData().then((response) => {
-      dispatch(setData(response));
-      setIsLoading(false);
-    });
+    setTryAgain(false);
+    getCarsData()
+      .then((response) => {
+        dispatch(setData(response));
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        setTryAgain(true);
+      });
   }, [dispatch]);
 
   return (
@@ -41,10 +48,18 @@ const Home = () => {
       <Header />
       {!isLoading ? (
         <Screen>
-          {carsData.map((item) => {
-            console.log(item);
-            return <Card {...item}></Card>;
-          })}
+          {tryAgain ? (
+            <CenteredDiv>
+              <TryAgainButton onClick={() => window.location.reload()}>
+                try again
+              </TryAgainButton>
+            </CenteredDiv>
+          ) : (
+            carsData.map((item) => {
+              console.log(item);
+              return <Card {...item}></Card>;
+            })
+          )}
         </Screen>
       ) : (
         <CenteredDiv>

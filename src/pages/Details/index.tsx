@@ -1,8 +1,11 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { Header } from "@components";
+import { Header, MyCarrousel } from "@components";
 import car from "@shared/types/car";
+
+import { Screen, CarDataContainer } from "./styles";
 
 const Details = () => {
   const { id } = useParams();
@@ -13,12 +16,17 @@ const Details = () => {
     navigate("/home");
     return <div>Error</div>;
   }
-  const carItem = carsData.find((item: car) => item.id === parseInt(id));
+  const carItem: car = carsData.find((item: car) => item.id === parseInt(id));
+  const { RenderCarrousel: Carrousel, focusItem } = MyCarrousel({
+    id: carItem.id,
+  });
   return (
-    <div>
+    <Screen>
       <Header />
-      <h1>{carItem.brand}</h1>
-    </div>
+      <CarDataContainer image={focusItem().image}>
+        <Carrousel />
+      </CarDataContainer>
+    </Screen>
   );
 };
 
