@@ -2,7 +2,7 @@ import axios from "axios";
 
 // export const API = "https://cars-fake-api.herokuapp.com";
 
-export const API = "http://localhost:3000/cars";
+export const API = "https://cars-api-json.herokuapp.com/cars";
 
 // const getCarsData = async () => {
 //   return axios.get(`${API}/cars`).then((response) => response.data);
