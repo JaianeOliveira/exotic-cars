@@ -4,6 +4,7 @@ type car = {
   model: string;
   price: number;
   image: string;
+  logo: string;
   details: { id: number; color: string; image: string }[];
 };
 

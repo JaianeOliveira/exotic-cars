@@ -8,7 +8,7 @@ import { Header, Card } from "@components";
 
 import CircularProgress from "@mui/material/CircularProgress";
 
-import getCarsData from "@services";
+import { getCarsData } from "@services";
 import { setData } from "@redux/carsSlice";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -20,6 +20,7 @@ type car = {
   model: string;
   price: number;
   image: string;
+  logo: string;
   details: { id: number; color: string; image: string }[];
 };
 const Home = () => {
@@ -56,7 +57,6 @@ const Home = () => {
             </CenteredDiv>
           ) : (
             carsData.map((item) => {
-              console.log(item);
               return <Card {...item}></Card>;
             })
           )}

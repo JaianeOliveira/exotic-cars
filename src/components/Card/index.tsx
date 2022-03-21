@@ -19,6 +19,7 @@ import { useNavigate } from "react-router-dom";
 
 const Card = (props: car) => {
   const navigate = useNavigate();
+  console.log(props.image);
   return (
     <CardContainer
       key={props.id}

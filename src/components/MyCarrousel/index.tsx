@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 
 import { Card, Container, Carrousel, Button } from "./styles";
@@ -43,13 +44,13 @@ const MyCarrousel = (props: { id: number }) => {
         </Button>
         <Carrousel>
           {items.map((item: { id: number; color: string; image: string }) => (
-            <Card image={item.image} isFocused={focusItem().id === item.id}>
+            <Card isFocused={focusItem().id === item.id}>
               <img src={item.image} />
             </Card>
           ))}
         </Carrousel>
         <Button onClick={next}>
-          <BsFillArrowRightCircleFill size={30} color="#313136" />
+          <BsFillArrowRightCircleFill color="#313136" />
         </Button>
       </Container>
     );

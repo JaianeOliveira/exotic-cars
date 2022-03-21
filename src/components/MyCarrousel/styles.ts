@@ -1,36 +1,36 @@
-import { width } from "@mui/system";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
-export const Card = styled.div<{ image: string; isFocused: boolean }>`
+export const Card = styled.div<{ isFocused: boolean }>`
   display: flex;
-  background: linear-gradient(
+
+  /* background: linear-gradient(
     90deg,
     ${(props) =>
-        props.isFocused ? " rgba(197, 194, 241, 1)" : "rgba(213, 213, 213, 1)"}
-      84%
-  );
+    props.isFocused
+      ? "rgba(197,194,241,1) 0%, rgba(197,194,241,0.3592787456779587) 100%"
+      : "rgba(213,213,213,1) 0%, rgba(213,213,213,0.2976540958180147) 100%"}
+  ); */
 
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: ${(props) => (props.isFocused ? "223px" : "180px")};
-  flex: 1;
-  min-width: ${(props) => (props.isFocused ? "287px" : "200px")};
-  @media (min-width: 1527px) {
-    max-width: 287px;
-  }
+  height: 180px;
+
   border-radius: 20px;
   margin: 10px;
   padding: 10px;
   transition: 0.4s all;
 
-  :focus {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+  transform: scale(${(props) => (props.isFocused ? 1.5 : 1)});
+  img {
+    width: auto;
+    height: auto;
+  }
+
+  @media (max-width: 426px) {
+    transform: scale(1);
   }
 `;
 export const Container = styled.div`
+  position: fixed;
+  bottom: 2vh;
   display: flex;
   flex-direction: row;
   width: 90%;
@@ -46,7 +46,11 @@ export const Carrousel = styled.div`
   flex: 1;
   background: transparent;
 
-  justify-content: space-between;
+  margin-right: 20px;
+
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Button = styled.button`
@@ -54,6 +58,5 @@ export const Button = styled.button`
   border: none;
   outline: none;
 
-  width: 30px;
   cursor: pointer;
 `;
