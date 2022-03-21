@@ -1,0 +1,154 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "brand": "Bentley",
+      "model": "Continental GT v8",
+      "price": 725,
+      "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Bentley-Continental-GT-v8/bentley-continental-gt-v8.png",
+      "logo": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/brands/bentley.png",
+      "details": [
+        {
+          "id": 1,
+          "color": "Dragon Red",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Bentley-Continental-GT-v8/dragon-red.png"
+        },
+        {
+          "id": 2,
+          "color": "Black Velvet",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Bentley-Continental-GT-v8/black-velvet.png"
+        },
+        {
+          "id": 3,
+          "color": "Azure Purple",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Bentley-Continental-GT-v8/azure-purple.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "brand": "BMW",
+      "model": "M3 Competition",
+      "price": 725,
+      "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/BMW-M3-Competition/bmw-m3-competition.png",
+      "logo": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/brands/bmw.png",
+      "details": [
+        {
+          "id": 1,
+          "color": "Branco Alpino",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/BMW-M3-Competition/branco-alpino.png"
+        },
+        {
+          "id": 2,
+          "color": "Cinza Brooklyn",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/BMW-M3-Competition/cinza-brooklyn.png"
+        },
+        {
+          "id": 3,
+          "color": "Preto Safira",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/BMW-M3-Competition/preto-safira.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "brand": "Mercedes-Benz",
+      "model": "AMG A 35 4MATIC",
+      "price": 725,
+      "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Mercedes-Benz-AMG-A-35-4MATIC/mercedes-benz-amg-a-35-4matic.png",
+      "logo": "",
+      "details": [
+        {
+          "id": 1,
+          "color": "Branco Polar",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Mercedes-Benz-AMG-A-35-4MATIC/branco-polar.png"
+        },
+        {
+          "id": 2,
+          "color": "Azul Denim",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Mercedes-Benz-AMG-A-35-4MATIC/azul-denim.png"
+        },
+        {
+          "id": 3,
+          "color": "Amarelo Sol",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Mercedes-Benz-AMG-A-35-4MATIC/amarelo-sol.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "brand": "Porshe",
+      "model": "911 GT3",
+      "price": 725,
+      "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Porshe%20911%20GT3/porshe-911-gt3.png",
+      "logo": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/brands/porshe.png",
+      "details": [
+        {
+          "id": 1,
+          "color": "Carrara White Metallic",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Porshe%20911%20GT3/Carrara-White-Metallic.png"
+        },
+        {
+          "id": 2,
+          "color": "Lava Orange",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Porshe%20911%20GT3/Lava-Orange.png"
+        },
+        {
+          "id": 3,
+          "color": "Shark Blue",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Porshe%20911%20GT3/Shark-Blue.png"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "brand": "Porshe",
+      "model": "911 Turbo S",
+      "price": 725,
+      "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Porshe%20911%20turbo%20S/porshe-911-turbo-s-lateral.png",
+      "logo": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/brands/porshe.png",
+      "details": [
+        {
+          "id": 1,
+          "color": "Gentian Blue Metallic",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Porshe%20911%20turbo%20S/porhe-911-turbo-s-blue.png"
+        },
+        {
+          "id": 2,
+          "color": "GT Silver Metallic",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Porshe%20911%20turbo%20S/porshe-911-turbo-s-gray.png"
+        },
+        {
+          "id": 3,
+          "color": "Racing Yellow",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/Porshe%20911%20turbo%20S/porshe-911-turbo-s-yellow.png"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "brand": "Rolls Royce",
+      "model": "Wraith",
+      "price": 725,
+      "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/rolls%20royce%20wraith/Black%20Diamond.png",
+      "logo": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/brands/Rolls-royce.svg.png",
+      "details": [
+        {
+          "id": 1,
+          "color": "Black Diamond",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/rolls%20royce%20wraith/Black%20Diamond%202.png"
+        },
+        {
+          "id": 2,
+          "color": "Dark Emerald",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/rolls%20royce%20wraith/Dark%20Emerald.png"
+        },
+        {
+          "id": 3,
+          "color": "Salamanca Blue",
+          "image": "https://github.com/JaianeOliveira/exotic-cars/blob/main/src/shared/assets/Cars/rolls%20royce%20wraith/Salamanca%20Blue.png"
+        }
+      ]
+    }
+  ]
+}
