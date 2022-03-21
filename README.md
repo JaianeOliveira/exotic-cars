@@ -1,46 +1,35 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Exotic Cars
+Catálogo de carros exóticos feito com ReactJS.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Demonstração
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Demonstração](https://lh3.googleusercontent.com/zFjaxVJVsFROQKJKX6jTZVC8O7bz1bWA1T7_6rfMMJV4F-8qEAO4F6xavwTe6zJqxs8buuRa9OKzq0dXlcGHxbfJwHMysgELTeu0teW7QON3Sm_5RI687bH3wP7wxn5VulAImbyGGkGn4vCbHAXc6GobnSfDqFITbyT5JprYLctanIqKMOYSiYAT8COiS1mc5uVCw-G6G15_en8JblwSOrTRjUjq4vu05Mom1aUfkFRV6XDXYaZK1cQlmv9BtrXVr1cNenY3D4Z0R9JtoZSqYglJWJP8Fa2xJyUE-7vxhbO3dv0PRryCLkrNiU82dG3tdnDon8edMoTiE_g2038z284w0lTJ6Wj1IRg50ROkZygHLOt3KUGXaq1smHlZv2DHw7PKEGMazbxIkTEgxQfGzzX95iTBkx4qSmN6pmVywutrc6VqLTyyE93szlIrTv473d4nfBep2RpSMMDqAVgsebiLemLaJywxDEKDn3YTGbmuRvxDULVYyZ_-gWWovsq5XgvxdB-UxF304j_TPA65PVFeJ2FVbVb3fgNpTp0Jzw-_9pCw2BRY3zv9QObcQr0IP2mvVTJ_Rkqku7811SQZPJPEYBcaglJj9bUL6oUvhpTlEgFY28fpVBxqralh0BnyMxAaS7YVXqBwsMkgYmIZvEViedygv_jlP5KGlXqln2sKi21EX3vrx-JrY10dnZ11VnLs-UKNZMufUm8JtB75O2LDE8a9ws4Or9Bky0fOp9E9yAXyDoAJNcgxorIz=w328-h184-no?authuser=0)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Telas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Catálogo**
+![App Screenshot](https://lh3.googleusercontent.com/5l7lb-cZlthxa9OoidTgGz1IWg7TW6vyRUrfKu2hPnR1fpKmL0QgeS418NJ2O42RjJRHbn6N7qtReprIAuuqW3t8BUQR02Gl8N4ypO4Clzx34MIlUQyWW3PWRu6rJqUks4ghWHM-RKwinpOGIUVFJBuON5JfmTVhjqwqStwR4z18svhWdRZuzOZ-99JabyzkXHUkXaZxrTVxcakgblKFzyZzI-EiJ4wkxt_r7eliALYaRmD9I8BlTkO-n75YP51GFxoSl9zSmIhLHmrlxH2c7SOfHwUCwyo78kiw-LFybYLpm2RQdMsq9WcssCK1sZoWMOJTkPF59eZoYfgLIll7_WnxiSK0xfCH0Mwmalhbqqd-IwVcGhminmCFbZfb3dkaa5iaC3Z8KhCoEKCP-phC7bGELSa_N4w1CVu2KdWrbGzney0PwjIPPrn9tVbqTjb4Angxfuvaufk16PKj00WbJytd-6khaAa8sgj_J4eNfT2fGAneULCIxHwT-tV-6sz2G7RKGlkE1iS3UpFolnRnljNYgepBTZ2vTj5WATOltRUPkYc2Z84b0FX4Skh7OGloC8XM2XOv4lfYbVOrY-C-yg93Rig2cVxcY6lOy-H9d8t-dpg7_rt1qH8yni7hJSPsHObGPip_TlZa4O9-oweWpQQppJPwWw-s7bqy0kJN_BznOOk8-DTS9BkmShpTABVY6KrNOB4Knxvnt6hBEo4qiXUU3osmriyrArX_x6rfUrSN6qajBGvKPVo3dAVZ=w1920-h892-no?authuser=0)
 
-### `npm run build`
+**Detalhes**
+![App Screenshot](https://lh3.googleusercontent.com/pw/AM-JKLW3qQpRtSqxvl2Rkf_3LTAq1yTGk6bdLB4TYmcusnPI9BJKvdTnPvSlqyam0i_8dA5uzjwH45Nq-7DBM9-MgLw0U9FWx2oDFdh43QLhw7czI68nYUq_XF0j2gyyXiEcw_T8Ggw0U7uDWRLBI1sEpO8=w1915-h893-no?authuser=0)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Stack utilizada
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Front-end:** React, Redux Toolkit, Axios, Styled Components, Typescript
 
-### `npm run eject`
+**Back-end(simulação):** JSON Server
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Autores
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [@JaianeOliveira](https://github.com/jaianeoliveira)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Licença
 
-## Learn More
+[MIT](https://choosealicense.com/licenses/mit/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

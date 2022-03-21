@@ -2,8 +2,6 @@ import React, { useLayoutEffect, useState } from "react";
 
 import { CenteredDiv, Screen, TryAgainButton } from "./styles";
 
-import { useNavigate } from "react-router-dom";
-
 import { Header, Card } from "@components";
 
 import CircularProgress from "@mui/material/CircularProgress";
@@ -12,23 +10,13 @@ import { getCarsData } from "@services";
 import { setData } from "@redux/carsSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-import Colors from "@/shared/constants/colors";
+import car from "@shared/types/car";
 
-type car = {
-  id: number;
-  brand: string;
-  model: string;
-  price: number;
-  image: string;
-  logo: string;
-  details: { id: number; color: string; image: string }[];
-};
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [tryAgain, setTryAgain] = useState(false);
   const carsData: car[] = useSelector((state: any) => state.cars);
   const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   useLayoutEffect(() => {
     setIsLoading(true);

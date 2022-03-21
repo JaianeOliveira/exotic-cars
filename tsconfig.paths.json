@@ -8,7 +8,6 @@
       "@services": ["./services"],
       "@shared/*": ["./shared/*"],
       "@redux/*": ["./redux/*"],
-      "@routes/*": ["./routes/*"],
       "@constants/*": ["./shared/constants/*"],
       "@brands/*": ["./shared/assets/brands/*"],
       "@cars/*": ["./shared/assets/Cars/*"]

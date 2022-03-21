@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useLayoutEffect, useState } from "react";
+import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Header, MyCarrousel } from "@components";
@@ -13,7 +13,6 @@ import {
   Title,
   GlobalStyle,
   ColorDetail,
-  BackgroundImage,
   BackToCatalogButton,
   BookNowButton,
 } from "./styles";

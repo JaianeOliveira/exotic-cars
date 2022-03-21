@@ -50,7 +50,7 @@ const MyCarrousel = (props: { id: number }) => {
           ))}
         </Carrousel>
         <Button onClick={next}>
-          <BsFillArrowRightCircleFill color="#313136" />
+          <BsFillArrowRightCircleFill size={30} color="#313136" />
         </Button>
       </Container>
     );
